@@ -16,4 +16,12 @@ tags:
 后天(2014.11.3)就要开始去金杜律师事务所进行专利代理实习生的工作了，希望能顺利度过4个月并留用。
 
 #过程
+##环境和工具
+* Macbook Air 13 inch 128GB，1.3G Core i5, 4G 1600MHz DDR3
+* OS X 10.9.5   
+* 通过邮箱验证的github帐号   
+* OS X自带的ruby环境   
+* jekyll(ruby package)   
+* 网上的jekyll theme博客主题模板
 
+##安装jekyll
