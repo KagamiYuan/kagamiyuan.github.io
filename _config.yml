@@ -1,0 +1,5 @@
+markdown: redcarpet
+permalink: /:year/:month/:title/
+author: Yuan Yuan
+highlighter: pygments
+paginate: 24
