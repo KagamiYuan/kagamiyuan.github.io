@@ -3,10 +3,10 @@
 
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Yuan Yuan" />
+    <meta name="author" content="Kagami Yuan" />
     <meta name="viewport" content="width=device-width"> 
-    <title>代码初学者建立github博客 | Yuan Yuan</title>
-    <link href="/feed/" rel="alternate" title="Yuan Yuan" type="application/atom+xml" />
+    <title>代码初学者建立github博客 | Kagami Yuan</title>
+    <link href="/feed/" rel="alternate" title="Kagami Yuan" type="application/atom+xml" />
     <!-- <link rel="shortcut icon" href="/favicon.ico"/>
 	  <link rel="icon" href="http://blog.sevenche.com/favicon.ico"/> -->
     <link rel="stylesheet" href="/media/css/highlight.css">
@@ -44,19 +44,16 @@
         <hr>
         <article class="content">
         <section class="post">
-<h1>背景</h1>
-
+<h1 id="section">背景</h1>
 <p>上大学的时候写博客用的微软的Windows live space记录生活，关闭后微软安排搬到了wordpress.com， 同时在bloodspot上开个了博客放自己在译言和豆瓣的公开文章。毕业回国后两个博客网站都被墙了，从此断了写博客的念头。</p>
 
 <p>现在在coursera上断断续续学了一年的R(<a href="https://www.coursera.org/specialization/jhudatascience/1?utm_medium=listingPage">Data science specilization @ JHU</a>)，觉得很有趣味，同时学会了用github，就计划在github上开个技术博客，记录敲代码的学习经历和做专利的生活。</p>
 
 <p>后天(2014.11.3)就要开始去金杜律师事务所进行专利代理实习生的工作了，希望能顺利度过4个月并留用。</p>
 
-<h1>过程</h1>
-
-<h2>概要</h2>
-
-<p>我没有学过ruby，没有学过自己架博客，wordpress下载了也不会用，github到现在都只会用客户端而不会用命令，没有学过jekyll，html只是前几天在w3school上粗略过了一遍，只能以小白的理解方法描述github博客搭建过程。</p>
+<h1 id="section-1">过程</h1>
+<p>##概要
+我没有学过ruby，没有学过自己架博客，wordpress下载了也不会用，github到现在都只会用客户端而不会用命令，没有学过jekyll，html只是前几天在w3school上粗略过了一遍，只能以小白的理解方法描述github博客搭建过程。</p>
 
 <p>github博客简单讲就是在github（一个类似百度云的网站，可以存放一些文件）上建立一个固定命名格式的文件夹，在其中上传一些固定要求的各种格式的文本文件，github就会自动提供一个公共链接，访问这个公共链接就可以打开博客。</p>
 
@@ -65,81 +62,101 @@
 <p>这些文件又可以分成两类：</p>
 
 <ul>
-<li>一类是用来描述博客外观的文件（包含博客的格式、字体、颜色、组成部分等）；</li>
-<li>另一类就是博客文章。</li>
+  <li>一类是用来描述博客外观的文件（包含博客的格式、字体、颜色、组成部分等）；</li>
+  <li>另一类就是博客文章。</li>
 </ul>
 
 <p>在<a href="http://jekyllthemes.org">jekyllthemes</a>网站上，可以看到若干种博客主题，下载下来后会发现都是一些文件，把这些文件上传到自己的github上，就可以建立相同的博客了。之后，再根据自己的需要，对博客外观进行调整，并发表自己的博客文章了。</p>
 
-<h2>环境和工具</h2>
-
+<h2 id="section-2">环境和工具</h2>
 <ul>
-<li>Macbook Air 13 inch 128GB，1.3G Core i5, 4G 1600MHz DDR3</li>
-<li>OS X 10.9.5<br></li>
-<li>通过邮箱验证的github帐号，及github客户端，学习github基础知识</li>
-<li>OS X自带的ruby环境（自带的，不用安装）</li>
-<li>jekyll (ruby package，需自行安装)<br></li>
-<li>网上的jekyll theme博客主题模板（问google和百度）</li>
-<li>sublime text2（mac下的文本编辑器，在这里用于编辑html和yml文件）</li>
-<li>mou（mac下的markdown编辑器，在这里用于编辑md文件），学习markdown基础知识</li>
-<li><a href="http://w3school.com.cn">w3school</a>学习html的基础知识</li>
+  <li>Macbook Air 13 inch 128GB，1.3G Core i5, 4G 1600MHz DDR3</li>
+  <li>OS X 10.9.5   </li>
+  <li>通过邮箱验证的github帐号，及github客户端，学习github基础知识</li>
+  <li>OS X自带的ruby环境（自带的，不用安装）</li>
+  <li>jekyll (ruby package，需自行安装)   </li>
+  <li>网上的jekyll theme博客主题模板（问google和百度）</li>
+  <li>sublime text2（mac下的文本编辑器，在这里用于编辑html和yml文件）</li>
+  <li>mou（mac下的markdown编辑器，在这里用于编辑md文件），学习markdown基础知识</li>
+  <li><a href="http://w3school.com.cn">w3school</a>学习html的基础知识</li>
 </ul>
 
-<h2>安装jekyll</h2>
-
+<h2 id="jekyll">安装jekyll</h2>
 <p>jekyll是一个ruby（一种编程语言）的程序。mac一般已经自带ruby环境，可以进入terminal程序，输入</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ ruby --version
-</code></pre></div>
-<p>检查自带的ruby版本</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ruby 2.0.0p481 (2014-05-08 revision 45883) [universal.x86_64-darwin13]
-</code></pre></div>
+
+<p><code>
+$ ruby --version
+</code>
+检查自带的ruby版本</p>
+
+<p><code>
+ruby 2.0.0p481 (2014-05-08 revision 45883) [universal.x86_64-darwin13]
+</code></p>
+
 <p>随后，安装ruby环境下的bundler程序，输入</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ gem install bundler
-</code></pre></div>
+
+<p><code>
+$ gem install bundler
+</code></p>
+
 <p>由于网络问题，可能会显示无法访问<a href="https://rubygems.org">ruby</a>网站下载程序。可以输入</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ gem sources -a http://ruby.taobao.org/
-</code></pre></div>
-<p>增加下载ruby程序的源，并使用<code>gem sources -l</code>查看。</p>
+
+<p><code>
+$ gem sources -a http://ruby.taobao.org/
+</code>
+增加下载ruby程序的源，并使用<code>gem sources -l</code>查看。</p>
 
 <p>如果还是下载失败，可以直接访问<a href="https://rubygems.org">ruby</a>，搜索bundler，下载到本地进行安装。</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd bundler程序所在的文件夹
+
+<p><code>
+$ cd bundler程序所在的文件夹
 $ gem install 下载得到的bundler文件名 --l
-</code></pre></div>
+</code></p>
+
 <p>安装时可能会出现“你没有权限修改ruby文件夹”的警告，可以输入</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo chmod 777 /Library/Ruby/Gems/2.0.0
-</code></pre></div>
-<p>来获得ruby文件夹的root权限。如果输入命令后反应很慢，可以用笨办法开启root帐号并登录，进行本地安装。具体可以参见<a href="http://support.apple.com/kb/HT1528?viewlocale=zh_CN&amp;locale=zh_CN">apple官方指导开启root账户</a>。并顺便在root账户下安装jekyll</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ gem install jekyll
-</code></pre></div>
+
+<p><code>
+$ sudo chmod 777 /Library/Ruby/Gems/2.0.0
+</code>
+来获得ruby文件夹的root权限。如果输入命令后反应很慢，可以用笨办法开启root帐号并登录，进行本地安装。具体可以参见<a href="http://support.apple.com/kb/HT1528?viewlocale=zh_CN&amp;locale=zh_CN">apple官方指导开启root账户</a>。并顺便在root账户下安装jekyll</p>
+
+<p><code>
+$ gem install jekyll
+</code></p>
+
 <p>到此，jekyll程序就安装完成了。</p>
 
-<h2>选择一个jekyll博客主题并安装</h2>
-
+<h2 id="jekyll-1">选择一个jekyll博客主题并安装</h2>
 <p>网上有很多jekyll博客主题，以我所用的<a href="https://github.com/dashjim">Jim的模板</a>为例，访问他的github账户，jekyll博客主题对应的repository的固定格式文件夹名称为<code>USERNAME.github.com</code>或<code>USERNAME.github.io</code>，我观察了下现在似乎都统一成io后缀了。</p>
 
 <p>点右上角Fork，将他的文件夹搬运到自己的github下后，点右侧的Setting，修改Repository name为自己的<code>USERNAME.github.io</code>，同时应该已经可以看到页面下面有一条信息</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> Your site is published at http://USERNAME.github.io.
-</code></pre></div>
-<p>访问该链接，即可访问你的博客了。不过在第一次建立博客时，github需要10min左右的缓冲时间来建立。</p>
+
+<p><code>
+ Your site is published at http://USERNAME.github.io.
+</code>
+访问该链接，即可访问你的博客了。不过在第一次建立博客时，github需要10min左右的缓冲时间来建立。</p>
 
 <p>返回到前一页面，点右侧的Clone in Desktop，将这个文件夹连同里面的所有文件下载到本地硬盘，以方便编辑。</p>
 
 <p>在拥有了自己的博客文件夹<code>USERNAME.github.io</code>后，通过在terminal中输入<code>jekyll serve</code>命令来在本地预览自己的博客。</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd USERNAME.github.io所在路径
+
+<p><code>
+$ cd USERNAME.github.io所在路径
 $ jekyll serve
-</code></pre></div>
+</code></p>
+
 <p>程序会自动在<a href="http://0.0.0.0:4000/">http://0.0.0.0:4000/</a>建立本地的博客预览，访问该链接即可预览博客，按<code>ctrl-c</code>来结束博客预览。</p>
 
 <p>在修改了文件夹内容后，先结束博客预览，再通过<code>jekyll serve</code>命令来重新建立新的博客预览。没有问题了，再上传到github网站上。</p>
 
-<h2>jekyll博客文件夹中的各文件用途</h2>
-
+<h2 id="jekyll-2">jekyll博客文件夹中的各文件用途</h2>
 <p>USERNAME.github.io文件夹中的一个文件<code>_config.yml</code>和两个文件夹<code>_layouts</code>，<code>_posts</code>是重要的。</p>
 
-<h3>_config.yml文件</h3>
-
+<h3 id="configyml">_config.yml文件</h3>
 <p><code>_config.yml</code>可以用sublime text2程序来打开并编辑，其中的内容可能会被其他页面所引用。</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#所使用的markdown解析器
+
+<p><code>
+#所使用的markdown解析器
 markdown: redcarpet
 #大概是指文章链接格式为年-月-标题
 permalink: /:year/:month/:title/
@@ -149,117 +166,121 @@ author: Yuan Yuan
 highlighter: pygments
 #paginate指定一页有几篇文章
 paginate: 24
-</code></pre></div>
-<h3>_layouts文件夹</h3>
+</code></p>
 
+<h3 id="layouts">_layouts文件夹</h3>
 <p><code>_layouts</code>文件夹中，包含各网页的模板，例如本文所述模板中包含<code>default.html</code>，<code>page.html</code>，<code>post.html</code>三个文件。<code>default.html</code>为最基本的默认模板，<code>page.html</code>和<code>post.html</code>均在自己文件的开端通过</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">---
-layout: default
----
-</code></pre></div>
-<p>来引用default模板。</p>
+
+<h2 id="section-3">```</h2>
+<p>layout: default
+—
+```
+来引用default模板。</p>
 
 <p>以<code>page.html</code>为例，在显示除博客文章以外的页面时载入：</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">---
-&lt;--!使用default模板--&gt;
+
+<h2 id="section-4">```</h2>
+<p>&lt;–!使用default模板–&gt;
 layout: default
----
+—</p>
 
-&lt;--!本页面自带的内容为content--&gt;
-&lt;section class=&quot;post&quot;&gt;
+<p>&lt;–!本页面自带的内容为content–&gt;
+&lt;section class="post"&gt;</p>
 
-&lt;/section&gt;
+<p>&lt;/section&gt;</p>
 
-&lt;--!如果本页面带有评论功能，那么同时载入comments.md--&gt;
-</code></pre></div>
+<p>&lt;–!如果本页面带有评论功能，那么同时载入comments.md–&gt;</p>
+
+<p>```</p>
+
 <p>以<code>post.html</code>为例，在显示博客文章时载入：</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">---
-&lt;--!使用default模板--&gt;
+
+<h2 id="section-5">```</h2>
+<p>&lt;–!使用default模板–&gt;
 layout: default
----
+—</p>
 
-&lt;--!本页面自带的内容为content，在页面上表现为博客文章--&gt;
-&lt;section class=&quot;post&quot;&gt;
+<p>&lt;–!本页面自带的内容为content，在页面上表现为博客文章–&gt;
+&lt;section class="post"&gt;</p>
 
-&lt;/section&gt;
-&lt; hr /&gt;&lt;--!水平分割线，为了在markdown下正常显示该代码，在h前加了一个空格--&gt;
+<p>&lt;/section&gt;
+&lt; hr /&gt;&lt;–!水平分割线，为了在markdown下正常显示该代码，在h前加了一个空格–&gt;</p>
 
-&lt;--!博客文章下面的内容，在页面上表现为作者author，许可license，分类categories，标签tags和时间time--&gt;
-&lt;section class=&quot;meta&quot;&gt;
+<p>&lt;–!博客文章下面的内容，在页面上表现为作者author，许可license，分类categories，标签tags和时间time–&gt;
+&lt;section class="meta"&gt;</p>
 
-&lt;--!作者信息--&gt;
-&lt;span class=&quot;author&quot;&gt;
-  &lt;a href=&quot;http://kagamiyuan.github.com&quot;&gt;Yuan Yuan&lt;/a&gt; - 专利律师实习生，北京金杜律师事务所。
-&lt;/span&gt;
-&lt;br /&gt;
+<p>&lt;–!作者信息–&gt;
+<span class="author">
+  <a href="http://kagamiyuan.github.com">Kagami Yuan</a> - 专利律师实习生，北京金杜律师事务所。
+</span>
+<br /></p>
 
-&lt;--!文章发布许可--&gt;
-&lt;span class=&quot;license&quot;&gt;
-  Published under &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/3.0/&quot;&gt;(CC) BY-NC-SA&lt;/a&gt;
-&lt;/span&gt;
+<p>&lt;–!文章发布许可–&gt;
+<span class="license">
+  Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
+</span></p>
 
-&lt;--!如果该文章有分类--&gt;
+<p>&lt;–!如果该文章有分类–&gt;</p>
 
-&lt;span class=&quot;categories&quot;&gt;
-  in categories
+<p><span class="categories">
+  in categories</span></p>
 
-  &lt;a href=&quot;/categories/#github&quot; title=&quot;github&quot;&gt;github&lt;/a&gt;&amp;nbsp;
+<p><a href="/categories/#github" title="github">github</a> </p>
 
-&lt;/span&gt;
+<p>&lt;/span&gt;</p>
 
+<p>&lt;–!如果该文章有标签–&gt;</p>
 
-&lt;--!如果该文章有标签--&gt;
+<p><span class="tags">
+  tagged with </span></p>
 
-&lt;span class=&quot;tags&quot;&gt;
-  tagged with 
+<p><a href="/tags/#github" title="github">github</a> </p>
 
-  &lt;a href=&quot;/tags/#github&quot; title=&quot;github&quot;&gt;github&lt;/a&gt;&amp;nbsp;
+<p><a href="/tags/#jekyll" title="jekyll">jekyll</a> </p>
 
-  &lt;a href=&quot;/tags/#jekyll&quot; title=&quot;jekyll&quot;&gt;jekyll&lt;/a&gt;&amp;nbsp;
+<p>&lt;/span&gt;</p>
 
-&lt;/span&gt;
+<p>&lt;–!发表时间–&gt;
+<span class="time">
+  <br />
+  <time datetime="2014-11-02">2014-11-02</time>
+</span>
+&lt;/section&gt;</p>
 
+<p>&lt;–!其他略–&gt;
+```
+###_post文件夹
+<code>_post</code>文件夹中存放着markdown格式的博客文章，文件名按照固定格式为</p>
 
-&lt;--!发表时间--&gt;
-&lt;span class=&quot;time&quot;&gt;
-  &lt;br/&gt;
-  &lt;time datetime=&quot;2014-11-02&quot;&gt;2014-11-02&lt;/time&gt;
-&lt;/span&gt;
-&lt;/section&gt;
+<p><code>
+2014-11-2-Establish-github-blog.md
+</code>
+文章开头通过</p>
 
-&lt;--!其他略--&gt;
-</code></pre></div>
-<h3>_post文件夹</h3>
-
-<p><code>_post</code>文件夹中存放着markdown格式的博客文章，文件名按照固定格式为</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">2014-11-2-Establish-github-blog.md
-</code></pre></div>
-<p>文章开头通过</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">---
-layout: post
+<h2 id="section-6">```</h2>
+<p>layout: post
 title: 代码初学者建立github博客
 categories:
 - github
 tags:
 - github
 - jekyll
----
-</code></pre></div>
-<p>表明该文章应采用<code>post.html</code>模板，并描述了文章标题、分类和标签。</p>
+—
+```
+表明该文章应采用<code>post.html</code>模板，并描述了文章标题、分类和标签。</p>
 
 <p>之后按照正常markdown语法撰写正文即可，文章标题就不用在正文部分再写一遍了。</p>
 
-<h1>结论</h1>
-
+<h1 id="section-7">结论</h1>
 <p>这个博客的结构构成为：</p>
 
 <ol>
-<li>主页Index</li>
-<li>文章分类 Categories</li>
-<li>文章标签 Tags</li>
-<li>留言 Comments</li>
-<li>关于我 About me</li>
-<li>订阅RSS</li>
+  <li>主页Index</li>
+  <li>文章分类 Categories</li>
+  <li>文章标签 Tags</li>
+  <li>留言 Comments</li>
+  <li>关于我 About me</li>
+  <li>订阅RSS</li>
 </ol>
 
 <p>其中1~5均引用的<code>page.html</code>模板，即<code>default.html</code>模板+页面内容content+可能的comment。</p>
@@ -273,7 +294,7 @@ tags:
 <section class="meta">
 <hr/>
 <span class="author">
-  <a href="http://kagamiyuan.github.com">Yuan Yuan</a> - 专利律师实习生，北京金杜律师事务所。
+  <a href="http://kagamiyuan.github.com">Kagami Yuan</a> - 专利律师实习生，北京金杜律师事务所。
 </span>
 <br />
 <span class="license">
@@ -413,7 +434,7 @@ $(window).load(function() {
 		<!-- *** Please Keep bellow link for at least 6 months! Thanks！*** -->
 		<a href="http://blog.sevenche.com">Template Maintained by Jim</a>
 		
-		| <span class="label label-info">2014-11-02 16:03:23 CST</span></small></p>
+		| <span class="label label-info">2014-11-02 21:05:26 CST</span></small></p>
     </footer>
 
     </div>

@@ -1,5 +1,17 @@
-markdown: redcarpet
-permalink: /:year/:month/:title/
-author: Yuan Yuan
+#site setting
+title: 长相思，在长安
+email: xiaoranstar@163.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is a Chinese blog about R and python study by Kagami Yuan, patent engineer internship.
+baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "http://yourdomain.com" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username: kagamiyuan
 highlighter: pygments
 paginate: 24
+
+markdown: kramdown
+permalink: /:year/:month/:title/
+author: Kagami Yuan
+#exclude: README.md
+
