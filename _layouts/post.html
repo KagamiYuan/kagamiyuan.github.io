@@ -5,6 +5,7 @@ layout: default
 <section class="post">
 {{ content }}
 </section>
+
 <section class="meta">
 <hr/>
 <span class="author">
@@ -35,6 +36,7 @@ layout: default
   <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
 </span>
 </section>
+
 {% include comments.md %}
 <script type="text/javascript">
 $(function(){
@@ -70,6 +72,7 @@ div.resized_image p {
   color: #333;
 }
 </style>
+
 <script type="text/javascript">
 //resize the big pic
 $(window).load(function() {
