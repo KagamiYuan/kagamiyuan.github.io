@@ -171,93 +171,96 @@ paginate: 24
 <h3 id="layouts">_layouts文件夹</h3>
 <p><code>_layouts</code>文件夹中，包含各网页的模板，例如本文所述模板中包含<code>default.html</code>，<code>page.html</code>，<code>post.html</code>三个文件。<code>default.html</code>为最基本的默认模板，<code>page.html</code>和<code>post.html</code>均在自己文件的开端通过</p>
 
-<h2 id="section-3">```</h2>
-<p>layout: default
-—
-```
-来引用default模板。</p>
+<pre><code>---
+layout: default
+---
+</code></pre>
+
+<p>来引用default模板。</p>
 
 <p>以<code>page.html</code>为例，在显示除博客文章以外的页面时载入：</p>
 
-<h2 id="section-4">```</h2>
-<p>&lt;–!使用default模板–&gt;
+<pre><code>---
+&lt;--!使用default模板--&gt;
 layout: default
-—</p>
+---
 
-<p>&lt;–!本页面自带的内容为content–&gt;
-&lt;section class="post"&gt;</p>
+&lt;--!本页面自带的内容为content--&gt;
+&lt;section class="post"&gt;
 
-<p>&lt;/section&gt;</p>
+&lt;/section&gt;
 
-<p>&lt;–!如果本页面带有评论功能，那么同时载入comments.md–&gt;</p>
-
-<p>```</p>
+&lt;--!如果本页面带有评论功能，那么同时载入comments.md--&gt;
+</code></pre>
 
 <p>以<code>post.html</code>为例，在显示博客文章时载入：</p>
 
-<h2 id="section-5">```</h2>
-<p>&lt;–!使用default模板–&gt;
+<pre><code>---
+&lt;--!使用default模板--&gt;
 layout: default
-—</p>
+---
 
-<p>&lt;–!本页面自带的内容为content，在页面上表现为博客文章–&gt;
-&lt;section class="post"&gt;</p>
+&lt;--!本页面自带的内容为content，在页面上表现为博客文章--&gt;
+&lt;section class="post"&gt;
 
-<p>&lt;/section&gt;
-&lt; hr /&gt;&lt;–!水平分割线，为了在markdown下正常显示该代码，在h前加了一个空格–&gt;</p>
+&lt;/section&gt;
+&lt; hr /&gt;&lt;--!水平分割线，为了在markdown下正常显示该代码，在h前加了一个空格--&gt;
 
-<p>&lt;–!博客文章下面的内容，在页面上表现为作者author，许可license，分类categories，标签tags和时间time–&gt;
-&lt;section class="meta"&gt;</p>
+&lt;--!博客文章下面的内容，在页面上表现为作者author，许可license，分类categories，标签tags和时间time--&gt;
+&lt;section class="meta"&gt;
 
-<p>&lt;–!作者信息–&gt;
-<span class="author">
-  <a href="http://kagamiyuan.github.com">Kagami Yuan</a> - 专利律师实习生，北京金杜律师事务所。
-</span>
-<br /></p>
+&lt;--!作者信息--&gt;
+&lt;span class="author"&gt;
+&lt;a href="http://kagamiyuan.github.com"&gt;Kagami Yuan&lt;/a&gt; - 专利律师实习生，北京金杜律师事务所。
+&lt;/span&gt;
+&lt;br /&gt;
 
-<p>&lt;–!文章发布许可–&gt;
-<span class="license">
-  Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
-</span></p>
+&lt;--!文章发布许可--&gt;
+&lt;span class="license"&gt;
+Published under &lt;a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"&gt;(CC) BY-NC-SA&lt;/a&gt;
+&lt;/span&gt;
 
-<p>&lt;–!如果该文章有分类–&gt;</p>
+&lt;--!如果该文章有分类--&gt;
 
-<p><span class="categories">
-  in categories</span></p>
+&lt;span class="categories"&gt;
+  in categories
+  
+  &lt;a href="/categories/#github" title="github"&gt;github&lt;/a&gt;&amp;nbsp;
+  
+&lt;/span&gt;
 
-<p><a href="/categories/#github" title="github">github</a> </p>
 
-<p>&lt;/span&gt;</p>
+&lt;--!如果该文章有标签--&gt;
 
-<p>&lt;–!如果该文章有标签–&gt;</p>
+&lt;span class="tags"&gt;
+  tagged with 
+  
+  &lt;a href="/tags/#github" title="github"&gt;github&lt;/a&gt;&amp;nbsp;
+  
+  &lt;a href="/tags/#jekyll" title="jekyll"&gt;jekyll&lt;/a&gt;&amp;nbsp;
+  
+&lt;/span&gt;
 
-<p><span class="tags">
-  tagged with </span></p>
 
-<p><a href="/tags/#github" title="github">github</a> </p>
+&lt;--!发表时间--&gt;
+&lt;span class="time"&gt;
+  &lt;br/&gt;
+  &lt;time datetime="2014-11-02"&gt;2014-11-02&lt;/time&gt;
+&lt;/span&gt;
+&lt;/section&gt;
 
-<p><a href="/tags/#jekyll" title="jekyll">jekyll</a> </p>
+&lt;--!其他略--&gt;
+</code></pre>
 
-<p>&lt;/span&gt;</p>
-
-<p>&lt;–!发表时间–&gt;
-<span class="time">
-  <br />
-  <time datetime="2014-11-02">2014-11-02</time>
-</span>
-&lt;/section&gt;</p>
-
-<p>&lt;–!其他略–&gt;
-```
-###_post文件夹
-<code>_post</code>文件夹中存放着markdown格式的博客文章，文件名按照固定格式为</p>
+<h3 id="post">_post文件夹</h3>
+<p><code>_post</code>文件夹中存放着markdown格式的博客文章，文件名按照固定格式为</p>
 
 <p><code>
 2014-11-2-Establish-github-blog.md
 </code>
 文章开头通过</p>
 
-<h2 id="section-6">```</h2>
+<h2 id="section-3">```</h2>
 <p>layout: post
 title: 代码初学者建立github博客
 categories:
@@ -271,7 +274,7 @@ tags:
 
 <p>之后按照正常markdown语法撰写正文即可，文章标题就不用在正文部分再写一遍了。</p>
 
-<h1 id="section-7">结论</h1>
+<h1 id="section-4">结论</h1>
 <p>这个博客的结构构成为：</p>
 
 <ol>
@@ -434,7 +437,7 @@ $(window).load(function() {
 		<!-- *** Please Keep bellow link for at least 6 months! Thanks！*** -->
 		<a href="http://blog.sevenche.com">Template Maintained by Jim</a>
 		
-		| <span class="label label-info">2014-11-02 21:05:26 CST</span></small></p>
+		| <span class="label label-info">2014-11-03 15:08:15 CST</span></small></p>
     </footer>
 
     </div>

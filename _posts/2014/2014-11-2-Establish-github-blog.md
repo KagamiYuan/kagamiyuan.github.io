@@ -134,89 +134,87 @@ paginate: 24
 ###_layouts文件夹
 `_layouts`文件夹中，包含各网页的模板，例如本文所述模板中包含`default.html`，`page.html`，`post.html`三个文件。`default.html`为最基本的默认模板，`page.html`和`post.html`均在自己文件的开端通过
 
-```
----
-layout: default
----
-```
+	---
+	layout: default
+	---
+
+
 来引用default模板。
 
 以`page.html`为例，在显示除博客文章以外的页面时载入：
 
-```
----
-<--!使用default模板-->
-layout: default
----
+	---
+	<--!使用default模板-->
+	layout: default
+	---
 
-<--!本页面自带的内容为content-->
-<section class="post">
-{{ content }}
-</section>
-
-<--!如果本页面带有评论功能，那么同时载入comments.md-->
-{% if page.comments %}
-{% include comments.md %}
-{% endif %}
-```
+	<--!本页面自带的内容为content-->
+	<section class="post">
+	{{ content }}
+	</section>
+	
+	<--!如果本页面带有评论功能，那么同时载入comments.md-->
+	{% if page.comments %}
+	{% include comments.md %}
+	{% endif %}
 
 以`post.html`为例，在显示博客文章时载入：
 
-```
----
-<--!使用default模板-->
-layout: default
----
 
-<--!本页面自带的内容为content，在页面上表现为博客文章-->
-<section class="post">
-{{ content }}
-</section>
-< hr /><--!水平分割线，为了在markdown下正常显示该代码，在h前加了一个空格-->
+	---
+	<--!使用default模板-->
+	layout: default
+	---
 
-<--!博客文章下面的内容，在页面上表现为作者author，许可license，分类categories，标签tags和时间time-->
-<section class="meta">
+	<--!本页面自带的内容为content，在页面上表现为博客文章-->
+	<section class="post">
+	{{ content }}
+	</section>
+	< hr /><--!水平分割线，为了在markdown下正常显示该代码，在h前加了一个空格-->
 
-<--!作者信息-->
-<span class="author">
-  <a href="http://kagamiyuan.github.com">{{ site.author }}</a> - 专利律师实习生，北京金杜律师事务所。
-</span>
-<br />
+	<--!博客文章下面的内容，在页面上表现为作者author，许可license，分类categories，标签tags和时间time-->
+	<section class="meta">
 
-<--!文章发布许可-->
-<span class="license">
-  Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
-</span>
+	<--!作者信息-->
+	<span class="author">
+	<a href="http://kagamiyuan.github.com">{{ site.author }}</a> - 专利律师实习生，北京金杜律师事务所。
+	</span>
+	<br />
 
-<--!如果该文章有分类-->
-{% if page.categories %}
-<span class="categories">
-  in categories
-  {% for cat in page.categories %}
-  <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
-  {% endfor %}
-</span>
-{% endif %}
+	<--!文章发布许可-->
+	<span class="license">
+	Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
+	</span>
 
-<--!如果该文章有标签-->
-{% if page.tags %}
-<span class="tags">
-  tagged with 
-  {% for tag in page.tags %}
-  <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
-  {% endfor %}
-</span>
-{% endif %}
+	<--!如果该文章有分类-->
+	{% if page.categories %}
+	<span class="categories">
+	  in categories
+	  {% for cat in page.categories %}
+	  <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+	  {% endfor %}
+	</span>
+	{% endif %}
 
-<--!发表时间-->
-<span class="time">
-  <br/>
-  <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
-</span>
-</section>
+	<--!如果该文章有标签-->
+	{% if page.tags %}
+	<span class="tags">
+	  tagged with 
+	  {% for tag in page.tags %}
+	  <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
+	  {% endfor %}
+	</span>
+	{% endif %}
 
-<--!其他略-->
-```
+	<--!发表时间-->
+	<span class="time">
+	  <br/>
+	  <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
+	</span>
+	</section>
+
+	<--!其他略-->
+
 ###_post文件夹
 `_post`文件夹中存放着markdown格式的博客文章，文件名按照固定格式为
 

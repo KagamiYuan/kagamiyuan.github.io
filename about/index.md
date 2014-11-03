@@ -4,8 +4,8 @@ layout: page
 comments: yes
 ---
   
-##袁元 Yuan Yuan   
-我是在北京金杜律师事务所工作的专利律师实习生
+##Kagami Yuan   
+专利律师实习生
 
 个人邮箱：yuany.kagami@gmail.com   
 [新浪微博](http://weibo.com/kagamicth)      
