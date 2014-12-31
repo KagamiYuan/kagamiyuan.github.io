@@ -1,7 +1,15 @@
-#The elements of style——Reading notes#1
-##I. Elementary Rules of Usage
+---
+layout: post
+title: The Element of Style—-Reading notes#1
+categories:
+- English
+tags:
+- English
+---
 
-###1. Form the possessive singular of nouns by adding ’s.
+#I. Elementary Rules of Usage
+
+##1. Form the possessive singular of nouns by adding ’s.
 
      Charles’s friend
 
@@ -20,13 +28,13 @@ Indefinite pronouns不定代词, like:
 
      one’s right, somebody else’s umbrella
 
-###2. In a series of three or more terms with a single conjunction, use a comma after each term except the last.
+##2. In a series of three or more terms with a single conjunction, use a comma after each term except the last.
 
      red, white, and blue; gold, silver, or copper
      
      He opened the letter, read it, and made a note of its contents.
  
-###3. Enclose parenthetic作为插入语的 expressions between commas.
+##3. Enclose parenthetic作为插入语的 expressions between commas.
 
      The best way to see a country, unless you are pressed for time, is to travel on foot.
 
@@ -105,7 +113,7 @@ When the main clause of a sentence is preceded by a phrase or a subordinate clau
 
 	Partly by hard fighting, partly by diplomatic skill, they enlarged their dominions to the east and rose to royal rank with the possession of Sicily.
 
-###4. Place a comma before a conjunction连词 introducing an independent clause独立的从句.
+##4. Place a comma before a conjunction连词 introducing an independent clause独立的从句.
 
 	The early records of the city have disappeared, and the story of its first years can no longer be reconstructed.
 		The situation is perilous, but there is still one chance of escape.
@@ -115,7 +123,7 @@ Two-part sentences of which the second member is introduced by *as* (in the sens
 	I have heard the arguments, but am still unconvinced.
 		He has had several years' experience and is thoroughly competent.
 
-###5. Do not join independent clauses with a comma.If two or more clauses grammatically complete and not joined by a conjunction are to form a single compound sentence, the proper mark of punctuation is a semicolon分号.
+##5. Do not join independent clauses with a comma.If two or more clauses grammatically complete and not joined by a conjunction are to form a single compound sentence, the proper mark of punctuation is a semicolon分号.
 	Mary Shelley's works are entertaining; they are full of engaging ideas.
 	It is nearly half past five; we cannot reach town before dark.It is, of course, equally correct to write each of these as two sentences, replacing the semicolons with periods.
 	Mary Shelley's works are entertaining. They are full of engaging ideas.	It is nearly half past five. We cannot reach town before dark. 
@@ -128,10 +136,10 @@ Two-part sentences of which the second member is introduced by *as* (in the sens
 	I hardly knew him, he was so changed.	
 	Here today, gone tomorrow.
 	
-###6. Do not break sentences in two.In other words, do not use periods for commas.
+##6. Do not break sentences in two.In other words, do not use periods for commas.
 	I met them on a Cunard liner many years ago. Coming home from Liverpool to New York.	She was an interesting talker. A woman who had traveled all over the world and lived in half a dozen countries.In both these examples, the first period should be replaced by a comma and the following word begun with a small letter.It is permissible to make an emphatic word or expression serve the purpose of a sentence and to punctuate it accordingly:		Again and again he called out. No reply.The writer must, however, be certain that the emphasis is warranted, lest a clipped sentence seem merely a blunder in syntax or in punctuation. Generally speaking, the place for broken sentences is in dialogue, when a character happens to speak in a clipped or fragmentary way.
 Rules 3, 4, 5, and 6 cover the most important principles that govern punctuation. They should be so thoroughly mastered that their application becomes second nature.
-###7. Use a colon冒号 after an independent clause to introduce a list of particulars, an appositive, an amplification, or an illustrative quotation.A colon tells the reader that what follows is closely related to the preceding clause. The colon has more effect than the comma, less power to separate than the semicolon, and more formality than the dash. It usually follows an independent clause and should not separate a verb from its complement or a preposition from its object. The examples in the lefthand column, below, are wrong; they should be rewritten as in the righthand column.
+##7. Use a colon冒号 after an independent clause to introduce a list of particulars, an appositive, an amplification, or an illustrative quotation.A colon tells the reader that what follows is closely related to the preceding clause. The colon has more effect than the comma, less power to separate than the semicolon, and more formality than the dash. It usually follows an independent clause and should not separate a verb from its complement or a preposition from its object. The examples in the lefthand column, below, are wrong; they should be rewritten as in the righthand column.
 
 | Wrong | Right |
 | ------------ | ------------- ||Your dedicated whittler requires: a knife, a piece of wood, and a back porch.|Your dedicated whittler requires three props: a knife, a piece of wood, and a back porch.|
@@ -141,11 +149,11 @@ Two-part sentences of which the second member is introduced by *as* (in the sens
 A colon may introduce a quotation that supports or contributes to the preceding clause.
 	The squalor of the streets reminded her of a line from Oscar Wilde: "We are all in the gutter, but some of us are looking at the stars."
 
-###8. Use a dash to set off an abrupt break or interruption and to announce a long appositive or summary.A dash is a mark of separation stronger than a comma, less formal than a colon, and more relaxed than parentheses.	His first thought on getting out of bed — if he had any thought at all — was to get back in again.		The rear axle began to make a noise — a grinding, chattering, teeth-gritting rasp.
+##8. Use a dash to set off an abrupt break or interruption and to announce a long appositive or summary.A dash is a mark of separation stronger than a comma, less formal than a colon, and more relaxed than parentheses.	His first thought on getting out of bed — if he had any thought at all — was to get back in again.		The rear axle began to make a noise — a grinding, chattering, teeth-gritting rasp.
 	The increasing reluctance of the sun to rise, the extra nip in the breeze, the patter of shed leaves dropping — all the evidences of fall drifting into winter were clearer each day.Use a dash only when a more common mark of punctuation seems inadequate.
 | Wrong | Right |
 | ------------ | ------------- ||Her father's suspicions proved well- founded — it was not Edward she cared for — it was San Francisco.|Her father's suspicions proved well- founded. It was not Edward she cared for, it was San Francisco.||Violence — the kind you see on television — is not honestly violent — there lies its harm.|Violence, the kind you see on television, is not honestly violent. There lies its harm.|
-###9. The number of the subject determines the number of the verb.Words that intervene between subject and verb do not affect the number of the verb.
+##9. The number of the subject determines the number of the verb.Words that intervene between subject and verb do not affect the number of the verb.
 A common blunder is the use of a singular verb form in a relative clause following "one of..." or a similar expression when the relative is the subject.
 Use a singular verb form after each, either, everyone, everybody, neither, nobody, someone.
 With none, use the singular verb when the word means "no one" or "not one."
@@ -164,7 +172,7 @@ Two-part sentences of which the second member is introduced by *as* (in the sens
 But	
 	The general's quarters are across the river.
 In these cases the writer must simply learn the idioms. The contents of a book is singular. The contents of a jar may be either singular or plural, depending on what's in the jar — jam or marbles.
-###10. Use the proper case of pronoun代词.The personal pronouns, as well as the pronoun *who*, change form as they function as subject主语 or object宾语.
+##10. Use the proper case of pronoun代词.The personal pronouns, as well as the pronoun *who*, change form as they function as subject主语 or object宾语.
 	Will Jane or he be hired, do you think?	
 	The culprit, it turned out, was he.	
 	We heavy eaters would rather walk than ride. Who knocks?	
@@ -190,7 +198,7 @@ Use the simple personal pronoun as a subject.
 | ------------ | ------------- |
 |Blake and myself stayed home.|Blake and I stayed home.|
 |Howard and yourself brought the lunch, I thought.|Howard and you brought the lunch, I thought.|The possessive case of pronouns is used to show ownership. It has two forms: the adjectival modifier, *your* hat, and the noun form, a hat *of yours*.	The dog has buried one of your gloves and one of mine in the flower bed. 
-Gerunds usually require the possessive case.		Mother objected to our driving on the icy roads.A present participle as a verbal, on the other hand, takes the objective case.	They heard him singing in the shower.The difference between a verbal participle and a gerund is not always obvious, but note what is really said in each of the following.	Do you mind me asking a question?	Do you mind my asking a question?In the first sentence, the queried objection is to me, as opposed to other members of the group, asking a question. In the second example, the issue is whether a question may be asked at all.###11. A participial phrase at the beginning of a sentence must refer to the grammatical subject.	Walking slowly down the road, he saw a woman accompanied by two children.The word *walking* refers to the subject of the sentence, not to the woman. To make it refer to the woman, the writer must recast the sentence.	He saw a woman, accompanied by two children, walking slowly down the road.Participial phrases分词短语 preceded by a conjunction or by a preposition介词, nouns in apposition同位, adjectives, and adjective phrases come under the same rule if they begin the sentence.| Wrong | Right |
+Gerunds usually require the possessive case.		Mother objected to our driving on the icy roads.A present participle as a verbal, on the other hand, takes the objective case.	They heard him singing in the shower.The difference between a verbal participle and a gerund is not always obvious, but note what is really said in each of the following.	Do you mind me asking a question?	Do you mind my asking a question?In the first sentence, the queried objection is to me, as opposed to other members of the group, asking a question. In the second example, the issue is whether a question may be asked at all.##11. A participial phrase at the beginning of a sentence must refer to the grammatical subject.	Walking slowly down the road, he saw a woman accompanied by two children.The word *walking* refers to the subject of the sentence, not to the woman. To make it refer to the woman, the writer must recast the sentence.	He saw a woman, accompanied by two children, walking slowly down the road.Participial phrases分词短语 preceded by a conjunction or by a preposition介词, nouns in apposition同位, adjectives, and adjective phrases come under the same rule if they begin the sentence.| Wrong | Right |
 | ------------ | ------------- |
 |On arriving in Chicago, his friends met him at the station.|On arriving in Chicago, he was met at the station by his friends.|
 |A soldier of proved valor, they entrusted him with the defense of the city.|A soldier of proved valor, he was entrusted with the defense of the city.| 
