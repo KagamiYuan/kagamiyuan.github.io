@@ -204,5 +204,6 @@ Use the simple personal pronoun as a subject.
 |A soldier of proved valor, they entrusted him with the defense of the city.|A soldier of proved valor, he was entrusted with the defense of the city.| 
 |Young and inexperienced, the task seemed easy to me.|Young and inexperienced, I thought the task easy.|
 |Without a friend to counsel him, the temptation proved irresistible.|Without a friend to counsel him, he found the temptation irresistible.|
-	Sentences violating Rule 11 are often ludicrous:	Being in a dilapidated condition, I was able to buy the house very cheap. 
+
+Sentences violating Rule 11 are often ludicrous:	Being in a dilapidated condition, I was able to buy the house very cheap. 
 	Wondering irresolutely what to do next, the clock struck twelve.
